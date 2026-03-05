@@ -19,7 +19,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @Autowired
   UserRepository userRepo;
-  
+
+
+ @GetMapping("/demo")
+  public String d1()
+  {
+    return  "iam demo";
+  }  
+
+
+
   @GetMapping("/users")
   public List<Users> getAllUsers()
   {
